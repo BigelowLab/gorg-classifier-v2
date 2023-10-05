@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+PATH_out = "${sample}_contigs_proteins_annot.tsv"
+
 STR_sample_id = "${sample}"
 PATH_contigs="${contigs}"
 PATH_proteins="${faa}"
