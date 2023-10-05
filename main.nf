@@ -163,7 +163,7 @@ workflow make_new_db {
 	
 
 	PROKKA_v1_14_6(CH_ok_sample_AND_fasta)
-	CH_test = CH_ok_sample_AND_fasta.join(PROKKA_v1_14_6).join(CH_sample_AND_classif_AND_taxid)
+	CH_test = CH_ok_sample_AND_fasta.join(PROKKA_v1_14_6.out).join(CH_sample_AND_classif_AND_taxid)
 	CH_test.view()
 
 	// combine prokka seqs and annots with gtdb_classif and taxid
