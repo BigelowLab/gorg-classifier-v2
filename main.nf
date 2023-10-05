@@ -164,7 +164,7 @@ workflow make_new_db {
 
 	PROKKA_v1_14_6(CH_ok_sample_AND_fasta)
 
-	// PROKKA_2_TABLE(PROKKA_v1_14_6.out)
+	PROKKA_2_TABLE(PROKKA_v1_14_6.out)
 	//PROKKA_GFF_2_TSV(PROKKA_v1_14_6.out.gff)
 }
 
