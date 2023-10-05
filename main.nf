@@ -164,8 +164,8 @@ workflow make_new_db {
 
 	PROKKA_v1_14_6(CH_ok_sample_AND_fasta)
 
-	PROKKA_2_TABLE(PROKKA_v1_14_6.out)
-	//PROKKA_GFF_2_TSV(PROKKA_v1_14_6.out.gff)
+	// combine prokka seqs and annots with gtdb_classif and taxid
+	PROKKA_2_TABLE(PROKKA_v1_14_6.out.join(CH_sample_AND_classif_AND_taxid))
 }
 
 
