@@ -2,6 +2,8 @@
 
 STR_sample_id = "${sample}"
 PATH_gff="${gff}"
+STR_classif="${classif}"
+STR_taxid="${taxid}"
 TAB = "\t"
 
 
