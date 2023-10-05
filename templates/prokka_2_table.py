@@ -106,4 +106,4 @@ for record in SeqIO.parse(PATH_proteins, "fasta"): LIST_proteins.append([record.
 DF_proteins = pd.DataFrame(LIST_proteins, columns=["protein_id", "protein_sequence"])
 DF_all = DF_prokka_contigs.merge(DF_proteins, on='protein_id', how='left')
 
-DF_all.to_csv(PATH_out)
+DF_all.to_csv(PATH_out, index=False)
