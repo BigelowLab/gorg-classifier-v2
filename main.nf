@@ -280,7 +280,7 @@ process PROKKA_2_TABLE{
 	memory = { 1.GB * task.attempt }
   errorStrategy = 'finish'
   maxRetries = 3
-	input: tuple val(sample), path(faa), path(gff), val(classif), val(taxid)
+	input: tuple val(sample), path(contigs), path(faa), path(gff), val(classif), val(taxid)
 	output:
 		tuple val(sample), path("${sample}_contigs_proteins_annot.tsv"), emit: tsv
 	script: template "prokka_2_table.py" }
